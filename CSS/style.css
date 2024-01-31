@@ -13,6 +13,8 @@ body{
     height: 100%;
     padding: 5em;
 }
+
+
 .card{
 
     background-image: url(https://img.freepik.com/premium-vector/software-development-programming-language-coding_284092-33.jpg?w=740);
@@ -21,8 +23,10 @@ body{
     width: 30em;
     height: 40em;
     border-radius: 2.5em;
-    position: relative;
+  
     overflow: hidden;
+   
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
