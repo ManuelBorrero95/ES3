@@ -7,8 +7,10 @@ body{
     font-size: 10px;
     font-family: 'DM Sans', sans-serif;
     background-color: #ffcfc2;
+    height: 100vw;
 }
 .container{
+    height: 100%;
     padding: 5em;
 }
 .card{
@@ -21,9 +23,9 @@ body{
     border-radius: 2.5em;
     position: relative;
     overflow: hidden;
-    margin: auto;
-    transform: translate(0, 50%);
-
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
 }
 .save {
