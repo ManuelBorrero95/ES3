@@ -1,52 +1,63 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
-body{
-    font-size: 10px;
-    font-family: 'DM Sans', sans-serif;
-    background-color: #ffcfc2;
-    height: 100vw;
+body {
+  font-size: 10px;
+  font-family: "DM Sans", sans-serif;
+  background-color: #ffcfc2;
+  height: 100vw;
 }
-.container{
-    height: 100%;
-    padding: 5em;
+.container {
+  height: 100%;
+  padding: 5em;
 }
 
-.card{
+.card {
+  background-image: url(https://img.freepik.com/premium-vector/software-development-programming-language-coding_284092-33.jpg?w=740);
+  background-size: cover;
+  border: 2px solid black;
+  width: 30em;
+  height: 40em;
+  border-radius: 2.5em;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
-    background-image: url(https://img.freepik.com/premium-vector/software-development-programming-language-coding_284092-33.jpg?w=740);
-    background-size: cover;
-    border: 2px solid black;
-    width: 30em;
-    height: 40em;
-    border-radius: 2.5em;
-    overflow: hidden;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.cover {
+  height: 100%;
+  width: 100%;
+}
 
+.card:hover .cover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .save {
-    position: absolute;
-    right: 10px;
-    top: -45px;
-    background-color: red;
-    border-radius: 2.5em;
-    padding: 1em 1.5em;
-    color: white;
-    border: 1px solid black;
-    transition: top 0.2s ease-in;
+  position: absolute;
+  right: 10px;
+  top: -45px;
+  background-color: red;
+  border-radius: 2.5em;
+  padding: 1em 1.5em;
+  color: white;
+  border: 1px solid black;
+  transition: top 0.2s ease-in-out;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.save:hover{
+    opacity: 1;
 }
 .card:hover .save {
-    top: 20px;
-  }
+  top: 20px;
+}
 
-
-.label, 
-.share, 
+.label,
+.share,
 .dots {
   background-color: rgb(255, 255, 255);
   padding: 10px 15px;
@@ -57,8 +68,7 @@ body{
   bottom: -45px;
   transition: bottom 0.2s ease-in-out;
 }
- 
- 
+
 .label:hover,
 .share:hover,
 .dots:hover {
